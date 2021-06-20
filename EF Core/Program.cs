@@ -26,7 +26,7 @@ namespace EF_Core
     public class Product{
       
         
-        public int ID { get; set; }
+        public int Id { get; set; }
         [MaxLength(100)]
         [Required]
         public string Name { get; set; }
@@ -44,7 +44,7 @@ namespace EF_Core
     {
         static void Main(string[] args)
         {
-            GetProductByName("6");
+            GetProductByName("Samsung");
            
         }
         static void AddProducts(){
@@ -88,9 +88,9 @@ namespace EF_Core
     }
     static void GetProductById(int id){
         using(var db = new ShopContext()){
-            var products = db.Products.Where(x=>x.ID == id).FirstOrDefault();
+            var products = db.Products.Where(x=>x.Id == id).FirstOrDefault();
             if (products !=null){
-            System.Console.WriteLine(products.ID+" "+products.Name+" "+products.Price);}
+            System.Console.WriteLine(products.Id+" "+products.Name+" "+products.Price);}
             else{
             System.Console.WriteLine("Ürün Bulunamadı");}
         }
