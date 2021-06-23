@@ -13,8 +13,9 @@ namespace EF_Core
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Order> Orders { get; set; }
-        public DbSet<User> users { get; set; }
-        public DbSet<Address> addresses { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Address> Addresses { get; set; }
+        public DbSet<Customer> Customers { get; set; }
         public static readonly ILoggerFactory MyLoggerFactory
     = LoggerFactory.Create(builder => { builder.AddConsole(); });
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -53,6 +54,7 @@ namespace EF_Core
         public string Username { get; set; } 
         public string Email { get; set; }
         public List<Address> addresses { get; set; }
+        public Customer Customer { get; set; }
     }
 
     public class Address
@@ -66,14 +68,80 @@ namespace EF_Core
         public User User { get; set; }
         public int? UserId { get; set; }
     }
-    
+    public class Customer
+    {
+        public int Id { get; set; }
+        public string IdentityNumber { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+    }
+    public class Supplier
+    {
+        public int Id { get; set; }
+        public string Name{get;set;}
+        public string TextNumber { get; set; }
+        public User User { get; set; }
+        public int UserId { get; set; }
+    }
     class Program
     {
         static void Main(string[] args)
         {
+          //  InsertUser();
+        
+           // InsertAddresses();
 
+           using(var db = new ShopContext()){
+               var user = db.Users.FirstOrDefault(x=>x.Username=="Huseyin");
+               if (user != null)
+               {
+                   user.addresses = new List<Address>();
+                   user.addresses.AddRange(
+                       new List<Address>(){
+                       new Address(){Fullname="Hüseyin Dönmez",Title="iş adresi1",Body="İzmir"},
+                       new Address(){Fullname="Hüseyin Dönmez",Title="iş adresi2",Body="istanbul"}
+                   } 
+                   );
+                   db.SaveChanges();
+               }
+           }
         }
-        static void AddProducts(){
+
+
+
+        static void InsertUser(){
+
+            var users = new List<User>(){
+
+                new User(){Username="Huseyin",Email="dnmezhuseyin@yandex.com"},
+                new User(){Username="Ahmer",Email="ahmet@yandex.com"},
+                new User(){Username="Serdar",Email="serdar@yandex.com"},
+            };
+            using(var db = new ShopContext()){
+                db.Users.AddRange(users);
+                db.SaveChanges();
+
+            }
+        }
+        
+        static void InsertAddresses(){
+
+            var address = new List<Address>(){
+                new Address(){Fullname="Hüseyin Dönmez",Title="Ev adresi",Body="Antalya",UserId=1},
+                new Address(){Fullname="Ahmet",Title="Ev adresi",Body="İzmir",UserId=2},
+                new Address(){Fullname="Serdar",Title="Ev adresi",Body="İstanbul",UserId=3}
+
+                };
+            using(var db = new ShopContext()){
+                db.Addresses.AddRange(address);
+                db.SaveChanges();
+
+            }
+        }
+        
+            
+        
+     /*   static void AddProducts(){
         using(var db = new ShopContext()){
                 var products = new List<Product>(){
                     new Product{Name="Samsung S6",Price=3000},
@@ -150,10 +218,10 @@ namespace EF_Core
                 db.SaveChanges();
             }
         }
+         
 
-
-    }
-
+    }*/ 
+    
 
 
     }
