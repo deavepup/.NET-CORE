@@ -13,6 +13,8 @@ namespace EF_Core
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Order> Orders { get; set; }
+        public DbSet<User> users { get; set; }
+        public DbSet<Address> addresses { get; set; }
         public static readonly ILoggerFactory MyLoggerFactory
     = LoggerFactory.Create(builder => { builder.AddConsole(); });
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -45,7 +47,25 @@ namespace EF_Core
         public int ProductId { get; set; }
         public DateTime DateAdded { get; set; }
     }    
+    public class User
+    {
+        public int Id { get; set; }   
+        public string Username { get; set; } 
+        public string Email { get; set; }
+        public List<Address> addresses { get; set; }
+    }
 
+    public class Address
+    {
+        public int Id { get; set; }
+        public string Fullname { get; set; }
+        public string Title { get; set; }
+        public string Body { get; set; }
+
+        
+        public User User { get; set; }
+        public int? UserId { get; set; }
+    }
     
     class Program
     {
