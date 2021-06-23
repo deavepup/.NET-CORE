@@ -12,6 +12,7 @@ namespace EF_Core
     public class ShopContext: DbContext{
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Order> Orders { get; set; }
         public static readonly ILoggerFactory MyLoggerFactory
     = LoggerFactory.Create(builder => { builder.AddConsole(); });
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -31,21 +32,26 @@ namespace EF_Core
         [Required]
         public string Name { get; set; }
         public decimal Price { get; set; }
+        public int CategoryId { get; set; }
     }
     public class Category{
         public int Id { get; set; }
         public string Name { get; set; }
 
     }
-    
+    public class Order
+    {
+        public int ID { get; set; }
+        public int ProductId { get; set; }
+        public DateTime DateAdded { get; set; }
+    }    
 
     
     class Program
     {
         static void Main(string[] args)
         {
-            GetProductByName("Samsung");
-           
+
         }
         static void AddProducts(){
         using(var db = new ShopContext()){
@@ -60,6 +66,20 @@ namespace EF_Core
                 System.Console.WriteLine("Veriler Eklendi");
             }
     }
+    static void DeleteProduct(int id){
+
+        using(var db = new ShopContext()){
+
+           var p =  db.Products.FirstOrDefault(x=>x.Id == id);
+            if (p != null)
+            {
+                db.Remove(p);
+                db.SaveChanges();
+            }
+            System.Console.WriteLine("Kayıt Yok");
+        }
+
+    }
     static void AddProduct(){
         using(var db = new ShopContext()){
                 var p =new Product{Name="Samsung S10",Price=8000};
@@ -71,17 +91,10 @@ namespace EF_Core
     
     static void GetAllProduct(){
         using(var db = new ShopContext()){
-            var products = db.
-            Products
-            .Select(x=> 
-            new{
-                    x.Name,
-                    x.Price
-            })
-            .ToList();
+            var products = db.Products.ToList();
             foreach (var p in products)
             {
-                System.Console.WriteLine(p.Name,p.Price);
+                System.Console.WriteLine(p.Id+" "+p.Name+" "+p.Price);
             }
 
         }
@@ -107,7 +120,19 @@ namespace EF_Core
     }
     }
 }
+    static void UpdateProduct(int id,string name,decimal price){
+        using(var db = new ShopContext()){
+            var p = db.Products.Where(x=>x.Id ==id).FirstOrDefault();
+            if (p !=null)
+            {
+                p.Name=name;
+                p.Price=price;
+                db.SaveChanges();
+            }
+        }
 
+
+    }
 
 
 
