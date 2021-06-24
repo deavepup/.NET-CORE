@@ -16,6 +16,8 @@ namespace shopapp.webui
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            // mvc
+            // razor pages
             services.AddControllersWithViews();
         }
 
@@ -26,14 +28,21 @@ namespace shopapp.webui
             {
                 app.UseDeveloperExceptionPage();
             }
-
+             
             app.UseRouting();
+
+            // localhost:5000
+            // localhost:5000/home
+            // localhost:5000/home/index
+            // localhost:5000/product/details/2
+            // localhost:5000/product/list/2
+            // localhost:5000/category/list
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
-                name:"default",
-                pattern: "{controller=Home}/{Action=Index}/{id?}"
+                    name: "default",
+                    pattern:"{controller=Home}/{action=Index}/{id?}"
                 );
             });
         }

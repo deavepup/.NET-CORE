@@ -1,4 +1,4 @@
-@model shopapp.webui.Models.Product
+@model Product
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,8 +26,22 @@
         </ul>
         </div>
     </div>
-    <p>ürün adı: @Model.Name</p>
-    <p>ürün fiyat: @Model.Price</p>
-    <p>ürün açıklama: @Model.Description</p>
+    @* <h1>@ViewData["Category"]</h1>
+    <h4>@(((Product)ViewData["Product"]).Name)</h4>
+    <h4>@(((Product)ViewData["Product"]).Price)</h4>
+    <h4>@(((Product)ViewData["Product"]).Description)</h4> *@
+
+
+    @* <h1>@ViewBag.Category</h1>
+    <h4>@ViewBag.Product.Name</h4>
+    <h4>@ViewBag.Product.Price</h4>
+    <h4>@ViewBag.Product.Description</h4> *@
+
+    <h1>@ViewBag.Category</h1>
+    
+    <h4>@Model.Name</h4>
+    <h4>@Model.Price</h4>
+    <h4>@Model.Description</h4>
+
 </body>
-</html> 
+</html>

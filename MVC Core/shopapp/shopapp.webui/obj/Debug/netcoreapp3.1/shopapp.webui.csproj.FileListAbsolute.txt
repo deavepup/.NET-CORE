@@ -17,27 +17,42 @@ C:\Users\sadikturan\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.
 C:\Users\sadikturan\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.RazorTargetAssemblyInfo.cache
 C:\Users\sadikturan\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.dll
 C:\Users\sadikturan\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.pdb
-C:\Users\dnmez\OneDrive\Masaüstü\shopapp.webui\bin\Debug\netcoreapp3.1\appsettings.Development.json
-C:\Users\dnmez\OneDrive\Masaüstü\shopapp.webui\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\dnmez\OneDrive\Masaüstü\shopapp.webui\bin\Debug\netcoreapp3.1\global.json
-C:\Users\dnmez\OneDrive\Masaüstü\shopapp.webui\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
-C:\Users\dnmez\OneDrive\Masaüstü\shopapp.webui\bin\Debug\netcoreapp3.1\shopapp.webui.exe
-C:\Users\dnmez\OneDrive\Masaüstü\shopapp.webui\bin\Debug\netcoreapp3.1\shopapp.webui.deps.json
-C:\Users\dnmez\OneDrive\Masaüstü\shopapp.webui\bin\Debug\netcoreapp3.1\shopapp.webui.runtimeconfig.json
-C:\Users\dnmez\OneDrive\Masaüstü\shopapp.webui\bin\Debug\netcoreapp3.1\shopapp.webui.runtimeconfig.dev.json
-C:\Users\dnmez\OneDrive\Masaüstü\shopapp.webui\bin\Debug\netcoreapp3.1\shopapp.webui.dll
-C:\Users\dnmez\OneDrive\Masaüstü\shopapp.webui\bin\Debug\netcoreapp3.1\shopapp.webui.pdb
-C:\Users\dnmez\OneDrive\Masaüstü\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.csprojAssemblyReference.cache
-C:\Users\dnmez\OneDrive\Masaüstü\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.AssemblyInfoInputs.cache
-C:\Users\dnmez\OneDrive\Masaüstü\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.AssemblyInfo.cs
-C:\Users\dnmez\OneDrive\Masaüstü\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.csproj.CoreCompileInputs.cache
-C:\Users\dnmez\OneDrive\Masaüstü\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\dnmez\OneDrive\Masaüstü\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.RazorTargetAssemblyInfo.cache
-C:\Users\dnmez\OneDrive\Masaüstü\shopapp.webui\obj\Debug\netcoreapp3.1\staticwebassets\shopapp.webui.StaticWebAssets.Manifest.cache
-C:\Users\dnmez\OneDrive\Masaüstü\shopapp.webui\obj\Debug\netcoreapp3.1\staticwebassets\shopapp.webui.StaticWebAssets.xml
-C:\Users\dnmez\OneDrive\Masaüstü\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.dll
-C:\Users\dnmez\OneDrive\Masaüstü\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.pdb
-C:\Users\dnmez\OneDrive\Masaüstü\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.genruntimeconfig.cache
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\bin\Debug\netcoreapp3.1\global.json
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\bin\Debug\netcoreapp3.1\shopapp.webui.exe
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\bin\Debug\netcoreapp3.1\shopapp.webui.deps.json
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\bin\Debug\netcoreapp3.1\shopapp.webui.runtimeconfig.json
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\bin\Debug\netcoreapp3.1\shopapp.webui.runtimeconfig.dev.json
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\bin\Debug\netcoreapp3.1\shopapp.webui.dll
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\bin\Debug\netcoreapp3.1\shopapp.webui.pdb
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.csprojAssemblyReference.cache
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\staticwebassets\shopapp.webui.StaticWebAssets.Manifest.cache
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\staticwebassets\shopapp.webui.StaticWebAssets.xml
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.AssemblyInfoInputs.cache
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.AssemblyInfo.cs
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.RazorTargetAssemblyInfo.cache
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.dll
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.pdb
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\bin\Debug\netcoreapp3.1\shopapp.webui.Views.dll
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\bin\Debug\netcoreapp3.1\shopapp.webui.Views.pdb
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.RazorAssemblyInfo.cache
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.RazorAssemblyInfo.cs
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.TagHelpers.input.cache
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.TagHelpers.output.cache
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.RazorCoreGenerate.cache
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.RazorTargetAssemblyInfo.cs
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.Views.pdb
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.csproj.CopyComplete
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Product\Details.cshtml.g.cs
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Product\Index.cshtml.g.cs
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Product\List.cshtml.g.cs
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Home\MyView.cshtml.g.cs
+C:\Users\sadikturan\Desktop\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\bin\Debug\netcoreapp3.1\global.json
@@ -48,28 +63,31 @@ C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\bin\
 C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\bin\Debug\netcoreapp3.1\shopapp.webui.runtimeconfig.dev.json
 C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\bin\Debug\netcoreapp3.1\shopapp.webui.dll
 C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\bin\Debug\netcoreapp3.1\shopapp.webui.pdb
+C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\bin\Debug\netcoreapp3.1\shopapp.webui.Views.dll
+C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\bin\Debug\netcoreapp3.1\shopapp.webui.Views.pdb
 C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.csprojAssemblyReference.cache
 C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.AssemblyInfoInputs.cache
 C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.AssemblyInfo.cs
 C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.csproj.CoreCompileInputs.cache
 C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.RazorTargetAssemblyInfo.cache
-C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\staticwebassets\shopapp.webui.StaticWebAssets.Manifest.cache
-C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\staticwebassets\shopapp.webui.StaticWebAssets.xml
-C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.dll
-C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.pdb
-C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.genruntimeconfig.cache
-C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\bin\Debug\netcoreapp3.1\shopapp.webui.Views.dll
-C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\bin\Debug\netcoreapp3.1\shopapp.webui.Views.pdb
 C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.RazorAssemblyInfo.cache
 C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.RazorAssemblyInfo.cs
 C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.TagHelpers.input.cache
 C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.TagHelpers.output.cache
 C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.RazorCoreGenerate.cache
 C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
-C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Home\index.cshtml.g.cs
+C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Home\MyView.cshtml.g.cs
+C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Product\Details.cshtml.g.cs
+C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Product\Index.cshtml.g.cs
+C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Product\List.cshtml.g.cs
+C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.RazorTargetAssemblyInfo.cache
 C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.RazorTargetAssemblyInfo.cs
 C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.Views.pdb
+C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\staticwebassets\shopapp.webui.StaticWebAssets.Manifest.cache
+C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\staticwebassets\shopapp.webui.StaticWebAssets.xml
+C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.dll
+C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.pdb
+C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.genruntimeconfig.cache
 C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.csproj.CopyComplete
-C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Product\details.cshtml.g.cs
-C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Product\List.cshtml.g.cs
