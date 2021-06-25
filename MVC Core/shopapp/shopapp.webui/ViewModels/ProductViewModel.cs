@@ -3,6 +3,6 @@ using shopapp.webui.Models;
 
 public class ProductViewModel
 {
-    public Category Category { get; set; }
+    public List<Category> Categories { get; set; }
     public List<Product> Products { get; set; }
 }

@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using shopapp.webui.Models;
 
@@ -29,11 +29,16 @@ namespace shopapp.webui.Controllers
                 new Product {Name="Iphone 11",Price=7000,Description="çok iyi telefon"},
             };
 
-            var category = new Category {Name="Telefonlar",Description="Telefon Kategorisi"};
+            var categories = new List<Category>()
+            {
+                new Category {Name="Telefon",Description="Telefon Kategorisi"},
+                new Category {Name="Bilgisayar",Description="Bilgisayar Kategorisi"},
+                new Category {Name="Elektronik",Description="Elektronik Kategorisi"}
+            };
 
             var productViewModel = new ProductViewModel()
             {
-                Category = category,
+                Categories = categories,
                 Products = products
             };
 

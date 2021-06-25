@@ -1,31 +1,17 @@
 @model Product
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Product</title>
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
 </head>
 <body>
-    <div class="navbar bg-primary navbar-dark navbar-expand-sm">
-        <div class="container">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a href="#" class="nav-link">Link 1</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Link 1</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Link 1</a>
-            </li>
-        </ul>
-        </div>
-    </div>
+   @await Html.PartialAsync("_navbar")
+    
     @* <h1>@ViewData["Category"]</h1>
     <h4>@(((Product)ViewData["Product"]).Name)</h4>
     <h4>@(((Product)ViewData["Product"]).Price)</h4>
