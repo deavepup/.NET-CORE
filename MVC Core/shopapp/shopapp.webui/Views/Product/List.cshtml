@@ -1,62 +1,30 @@
 @model ProductViewModel
-
+@{
+    Layout="_Layout";
+}
 @{
     var popularClass = Model.Products.Count>2? "popular":"";
     var products = Model.Products;
-    var categories = Model.Categories;
 }
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Product</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <style>
-        .popular {
-            color:green;
-            font-weight: 700;
-        }
-    </style>
-</head>
-<body>
-    @await Html.PartialAsync("_navbar")
-    <partial name="_header">
-   
-    <main>
-        <div class="container">
-
-            <div class="row">
-                <div class="col-md-3">
-                    @await Html.PartialAsync("_categories", categories) 
-                </div>
-                <div class="col-md-9">
-                    @if(products.Count ==0 )
-                    {
-                    @await Html.PartialAsync("_noproduct")
-                    }
-                    else
-                    {
-                        <div class="row">                  
-                            @foreach (var product in products)
-                            {    
-                                <div class="col-md-3">
-                                    @await Html.PartialAsync("_product", product)   
-                            </div>       
-                            }   
-                        </div>
-                    }
-                    </div>
-                        </div>    
-
-
-          
-
+ <div class="row">
+    <div class="col-md-3">
+            @await Component.InvokeAsync("Categories")
     </div>
-    </main>
-    
-</body>
-</html>
+    <div class="col-md-9">
+        @if(products.Count == 0 )
+        {
+        @await Html.PartialAsync("_noproduct")
+        }
+        else
+        {
+            <div class="row">                  
+                @foreach (var product in products)
+                {    
+                    <div class="col-md-3">
+                        @await Html.PartialAsync("_product", product)   
+                </div>       
+                }   
+            </div>
+        }
+        </div>
+            </div>    

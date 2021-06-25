@@ -177,3 +177,6 @@ C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\
 C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.pdb
 C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.genruntimeconfig.cache
 C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\shopapp.webui.csproj.CopyComplete
+C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Categories\Default.cshtml.g.cs
+C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\dnmez\OneDrive\Masaüstü\.NET CORE\MVC Core\shopapp\shopapp.webui\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
