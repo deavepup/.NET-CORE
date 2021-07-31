@@ -1,10 +1,7 @@
-@model Product
-@{
-    Layout="_Layout";
+@section Categories
+{
+    @await Component.InvokeAsync("Categories")
 }
-    <h1>@ViewBag.Category</h1>
-    
-    <h4>@Model.Name</h4>
-    <h4>@Model.Price</h4>
-    <h4>@Model.Description</h4>
 
+
+product index

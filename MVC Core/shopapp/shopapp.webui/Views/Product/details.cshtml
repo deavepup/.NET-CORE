@@ -1,7 +1,25 @@
-@model shopapp.webui.Models.Product
-@{
-    Layout="_Layout";
+@model Product
+
+@section Categories
+{
+    @await Component.InvokeAsync("Categories")
 }
-    <p>ürün adı: @Model.Name</p>
-    <p>ürün fiyat: @Model.Price</p>
-    <p>ürün açıklama: @Model.Description</p>
+
+<div class="card mb-3">
+    <div class="card-body">
+        <div class="row no-gutters">
+            <div class="col-md-3">
+                <img src="~/img/@Model.ImageUrl" class="card-img">
+            </div>
+            <div class="col-md-9">
+                
+                    <h5 class="card-title">@Model.Name</h5>
+                    <p class="card-text">@Model.Description</p>
+                    <p class="card-text">
+                        <small class="text-muted">3 days ago</small>
+                    </p>
+            
+            </div>
+        </div>
+    </div>
+</div>

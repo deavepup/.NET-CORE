@@ -1,5 +1,8 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using shopapp.webui.Data;
 using shopapp.webui.Models;
 
 namespace shopapp.webui.Controllers
@@ -19,20 +22,40 @@ namespace shopapp.webui.Controllers
             // ViewBag.Product
             return View(product);
         }
-        public IActionResult list() 
+        // product/list => tüm ürünleri (sayfalama)
+        // product/list/2 => 2 numaralı kategoriye ait ürünler
+        public IActionResult list(int? id,string q,double? min_price,double? max_price) 
         {
-            var products = new List<Product>()
-            {
-                new Product {Name="Iphone 7",Price=3000,Description="iyi telefon",IsApproved=false},
-                new Product {Name="Iphone 8",Price=4000,Description="çok iyi telefon",IsApproved=true},
-                new Product {Name="Iphone X",Price=5000,Description="çok iyi telefon",IsApproved=true},
-                new Product {Name="Iphone 11",Price=7000,Description="çok iyi telefon"},
-            };
+            // {controller}/{action}/{id?}
+            // product/list/3
+            // RouteData.Values["controller"] => product
+            // RouteData.Values["action"] => list
+            // RouteData.Values["id"] => 3
 
+            // Console.WriteLine(RouteData.Values["controller"]);
+            // Console.WriteLine(RouteData.Values["action"]);
+            // Console.WriteLine(RouteData.Values["id"]);
+
+            // QueryString
+            // Console.WriteLine(q);
+            // Console.WriteLine(HttpContext.Request.Query["q"].ToString());
+            // Console.WriteLine(HttpContext.Request.Query["min_price"].ToString());
+
+            var products = ProductRepository.Products;
+
+            if (id!=null)
+            {
+                products = products.Where(p=>p.CategoryId==id).ToList();
+            }
+
+            if (!string.IsNullOrEmpty(q))
+            {
+                products = products.Where(i=>i.Name.Contains(q) || i.Description.Contains(q)).ToList();
+            }
 
             var productViewModel = new ProductViewModel()
             {
-                Products = products
+                Products =products
             };
 
             return View(productViewModel);
@@ -40,13 +63,7 @@ namespace shopapp.webui.Controllers
 
         public IActionResult Details(int id)
         {
-            var product = new Product();
-
-            product.Name = "samsung s6";
-            product.Price = 3000;
-            product.Description = "iyi telefon";
- 
-            return View(product);
+            return View(ProductRepository.GetProductById(id));
         }
     }
 }
