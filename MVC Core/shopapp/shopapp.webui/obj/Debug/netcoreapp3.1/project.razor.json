@@ -12432,24 +12432,14 @@
         }
       },
       {
-        "HashCode": -1299279706,
+        "HashCode": 1744707792,
         "Kind": "MVC.ViewComponent",
         "Name": "__Generated__CategoriesViewComponentTagHelper",
         "AssemblyName": "shopapp.webui",
         "CaseSensitive": false,
-        "TagMatchingRules": [],
-        "Diagnostics": [
+        "TagMatchingRules": [
           {
-            "Id": "RZ3901",
-            "Severity": 3,
-            "Message": "View component 'shopapp.webui.ViewComponents.CategoriesViewComponent' must have exactly one public method named 'Invoke' or 'InvokeAsync'.",
-            "Span": {
-              "FilePath": null,
-              "AbsoluteIndex": -1,
-              "LineIndex": -1,
-              "CharacterIndex": -1,
-              "Length": 0
-            }
+            "TagName": "vc:categories"
           }
         ],
         "Metadata": {
