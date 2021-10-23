@@ -47,11 +47,11 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            GetAllProducs();
             
+            GetProductByName("samsung s5");
                 
         }
-            static void AddProducts(){
+        static void AddProducts(){
                 using(var db = new ShopContext())
             {
             //var p = new Product{Name="Samsung S5",Price=3000};
@@ -79,7 +79,11 @@ namespace ConsoleApp
             }
         static void GetAllProducs(){
             using(var db = new ShopContext()){
-                 var products = db.Products.ToList();
+                 var products = db.Products
+                 .Select(p=> new{
+                     p.Name,p.Price
+                 })
+                 .ToList();
                  foreach (var item in products)
                  {
                      System.Console.WriteLine(item.Name +" "+ item.Price);
@@ -87,9 +91,49 @@ namespace ConsoleApp
             }
            
          }
+        static void GetProductById(int id){
+            using(var db = new ShopContext()){
+                 var products = db.Products
+                 .Where(x=>x.Id == id)
+                 .Select(x=>new{x.Name,x.Price})
+                 .FirstOrDefault();
+                 if (products != null)
+                 {
+                     System.Console.WriteLine(products.Name +" "+ products.Price);
+                 }
+                 else{
+                     System.Console.WriteLine("Ürün Bulunamadı");
+                 }
+            }
+           
+         
+        }
+
+          static void GetProductByName(string Name){
+            using(var db = new ShopContext()){
+                 var products = db.Products
+                 .Where(x=>x.Name.ToLower().Contains(Name.ToLower()))
+                 .Select(x=>new{x.Name,x.Price})
+                 .ToList();
+                 if (products != null)
+                 {
+                     foreach (var item in products)
+                     {
+                          System.Console.WriteLine(item.Name +" "+ item.Price);
+                     }
+                    
+                 }
+                 else{
+                     System.Console.WriteLine("Ürün Bulunamadı");
+                 }
+            }
+           
+         
+        }
+
+
         
-
-
+        
         
         }
 
