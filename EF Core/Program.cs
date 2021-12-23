@@ -7,135 +7,125 @@ using Microsoft.Extensions.Logging;
 
 namespace ConsoleApp
 {     
-    public class ShopContext:DbContext
-    {
-        
-        public DbSet<Product>Products{get;set;}
-        public DbSet<Category>Categories{get;set;}
-        protected override void OnConfiguring(DbContextOptionsBuilder OptionsBuild)
+    public class ShopContext: DbContext
+    {        
+        public DbSet<Product> Products {get;set;}
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Address> Addresses { get; set; }
+        public static readonly ILoggerFactory MyLoggerFactory = LoggerFactory.Create(builder => { builder.AddConsole(); });   
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            OptionsBuild
-            .UseLoggerFactory(MyLoggerFactory)
-            .UseSqlite("Data Source=shop.db");
+            optionsBuilder
+                .UseLoggerFactory(MyLoggerFactory)
+                .UseMySql(@"server=localhost;port=3306;database=ShopDb;user=root;password=mysql1234;");                
         }
-        public static readonly ILoggerFactory MyLoggerFactory=LoggerFactory.Create(builder=>{builder.AddConsole();});
     }
 
-// Entity Classes
-    // Product (Id,Name,Price) => Product(Id,Name,Price)
+    // One to Many
+    // One to One
+    // Many to Many
+
+    public class User
+    {      
+        public int Id { get; set; }
+        public string Username { get; set; }
+        public string Email { get; set; }
+        public List<Address> Addresses { get; set; } // navigation property
+    }
+
+    public class Address
+    {
+        public int Id { get; set; }
+        public string Fullname { get; set; }
+        public string Title { get; set; }
+        public string Body { get; set; }
+
+        public User User { get; set; } // navigation property
+        public int UserId { get; set; } // int=> null, 1, 2, 3, 4
+    }
 
     public class Product
     { 
-        // primary key (Id, <type_name>Id)
         public int Id { get; set; }
        
-       [MaxLength(100)]
-       [Required]
+        [MaxLength(100)]
+        [Required]
         public string Name { get; set; }
 
         public decimal Price { get; set; }
-        public string Description {get;set;}
-    }
 
+        public int CategoryId { get; set; }
+        
+    }
     public class Category
     {
         public int Id { get; set; }
         public string Name { get; set; }
     }
-
+   
     class Program
     {
         static void Main(string[] args)
         {
-            
-            GetProductByName("samsung s5");
-                
-        }
-        static void AddProducts(){
-                using(var db = new ShopContext())
+            // InsertUsers();
+            // InsertAddresses();
+
+            using(var db = new ShopContext())
             {
-            //var p = new Product{Name="Samsung S5",Price=3000};
-            var Products = new List<Product>(){
-                new Product{Name="Samsung S6",Price=6000},
-                new Product{Name="Samsung S7",Price=7000},
-                new Product{Name="Samsung S8",Price=8000},
-                new Product{Name="Samsung S9",Price=9000}
+                var user = db.Users.FirstOrDefault(i=>i.Username=="cinarturan");
+
+                if(user!=null)
+                {
+                    user.Addresses = new List<Address>();
+
+                    user.Addresses.AddRange(
+                        new List<Address>(){
+                            new Address(){Fullname="Çınar Turan",Title="İş adresi 1",Body="Kocaeli"},
+                            new Address(){Fullname="Çınar Turan",Title="İş adresi 2 ",Body="Kocaeli"},
+                            new Address(){Fullname="Çınar Turan",Title="İş adresi 3",Body="Kocaeli"}
+                        }
+                    );
+
+                    db.SaveChanges();
+                }
+            }
+        }
+
+        static void InsertUsers()
+        {
+            var users = new List<User>(){
+                new User(){Username="sadikturan",Email="info@sadikturan.com"},
+                new User(){Username="cinarturan",Email="info@cinarturan.com"},
+                new User(){Username="yigitbilgi",Email="info@yigitbilgi.com"},
+                new User(){Username="adabilgi",Email="info@adabilgi.com"},
             };
-            db.Products.AddRange(Products);
-            db.SaveChanges();
-            System.Console.WriteLine("Veriler Eklendi.");
-            }
-            }
-        
-        static void AddProduct(){
-                using(var db = new ShopContext())
+
+            using(var db = new ShopContext())
             {
-            var p = new Product{Name="Samsung 10",Price=9500};
-           
-            db.Products.Add(p);
-            db.SaveChanges();
-            System.Console.WriteLine("Veriler Eklendi.");
+                db.Users.AddRange(users);
+                db.SaveChanges();
             }
-            }
-        static void GetAllProducs(){
-            using(var db = new ShopContext()){
-                 var products = db.Products
-                 .Select(p=> new{
-                     p.Name,p.Price
-                 })
-                 .ToList();
-                 foreach (var item in products)
-                 {
-                     System.Console.WriteLine(item.Name +" "+ item.Price);
-                 }
-            }
-           
-         }
-        static void GetProductById(int id){
-            using(var db = new ShopContext()){
-                 var products = db.Products
-                 .Where(x=>x.Id == id)
-                 .Select(x=>new{x.Name,x.Price})
-                 .FirstOrDefault();
-                 if (products != null)
-                 {
-                     System.Console.WriteLine(products.Name +" "+ products.Price);
-                 }
-                 else{
-                     System.Console.WriteLine("Ürün Bulunamadı");
-                 }
-            }
-           
-         
         }
+        static void InsertAddresses()
+        {
+            var addresses = new List<Address>(){
+                new Address(){Fullname="Sadık Turan",Title="Ev adresi",Body="Kocaeli",UserId=1},
+                new Address(){Fullname="Sadık Turan",Title="İş adresi",Body="Kocaeli",UserId=1},
+                new Address(){Fullname="Yiğit Bilgi",Title="Ev adresi",Body="Kocaeli",UserId=3},
+                new Address(){Fullname="Yiğit Bilgi",Title="İş adresi",Body="Kocaeli",UserId=3},
+                new Address(){Fullname="Çınar Turan",Title="İş adresi",Body="Kocaeli",UserId=2},
+                new Address(){Fullname="Ada Bilgi",Title="İş adresi",Body="Kocaeli",UserId=4}
+             
+            };
 
-          static void GetProductByName(string Name){
-            using(var db = new ShopContext()){
-                 var products = db.Products
-                 .Where(x=>x.Name.ToLower().Contains(Name.ToLower()))
-                 .Select(x=>new{x.Name,x.Price})
-                 .ToList();
-                 if (products != null)
-                 {
-                     foreach (var item in products)
-                     {
-                          System.Console.WriteLine(item.Name +" "+ item.Price);
-                     }
-                    
-                 }
-                 else{
-                     System.Console.WriteLine("Ürün Bulunamadı");
-                 }
+            using(var db = new ShopContext())
+            {
+                db.Addresses.AddRange(addresses);
+                db.SaveChanges();
             }
-           
-         
         }
-
-
-        
-        
-        
-        }
-
+      
+   
     }
-
+}
