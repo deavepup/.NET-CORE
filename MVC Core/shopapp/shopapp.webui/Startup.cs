@@ -45,7 +45,7 @@ namespace shopapp.webui
             // localhost:5000
             // localhost:5000/home
             // localhost:5000/home/index
-            // localhost:5000/product/details/3
+            // localhost:5000/product/details/2
             // localhost:5000/product/list/2
             // localhost:5000/category/list
 
