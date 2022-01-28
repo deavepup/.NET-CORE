@@ -1,11 +1,57 @@
-﻿<!DOCTYPE html>
+﻿@model ProductViewModel
+@{
+    var popularClass = Model.Products.Count > 2 ? "popular" : "";
+    var product = Model.Products;
+    var categoryName = Model.Categori.Name;
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>List</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <style>
+        .popular {
+            color: green;
+            font-weight: 700;
+        }
+    </style>
 </head>
+
 <body>
-  <h1>Product/List</h1>
+    <h1 class="@popularClass">@categoryName</h1>
+    <div>
+        @if (product.Count == 0)
+        {
+            <p style="background-color: red;font-size: 35px;">Ürün Yok!</p>
+        }
+        else
+        {
+            <ul>
+                @foreach (var item in product)
+                {
+                    @if (item.IsApproved == true)
+                    {
+                        <li>
+                            <div>
+                                <p>@item.Name</p>
+                                <p>@item.Price</p>
+                                <p>@item.Description</p>
+                            </div>
+                        </li>
+                    }
+                    else
+                    {
+                        <li style="background-color:red">Ürün Satışta Değil</li>
+                    }
+
+                }
+            </ul>
+        }
+
+    </div>
+
+
+
 </body>
 </html>

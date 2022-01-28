@@ -32,3 +32,5 @@ C:\Users\PC\Desktop\.NET-CORE\MVC Core\ShopApp\ShopApp.WebUI\obj\Debug\netcoreap
 C:\Users\PC\Desktop\.NET-CORE\MVC Core\ShopApp\ShopApp.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Product\Details.cshtml.g.cs
 C:\Users\PC\Desktop\.NET-CORE\MVC Core\ShopApp\ShopApp.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Product\Index.cshtml.g.cs
 C:\Users\PC\Desktop\.NET-CORE\MVC Core\ShopApp\ShopApp.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Product\List.cshtml.g.cs
+C:\Users\PC\Desktop\.NET-CORE\MVC Core\ShopApp\ShopApp.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Home\MyView.cshtml.g.cs
+C:\Users\PC\Desktop\.NET-CORE\MVC Core\ShopApp\ShopApp.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs

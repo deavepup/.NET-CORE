@@ -1,8 +1,4 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model Product
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +7,21 @@
  <title>Index</title>
 </head>
 <body>
-  <h1>Product/Index</h1>
+   @* <h1>@ViewData["Category"]</h1>
+    <h4>@(((Product)ViewData["Product"]).Name)</h4>
+    <h4>@(((Product)ViewData["Product"]).Price)</h4>
+    <h4>@(((Product)ViewData["Product"]).Description)</h4> *@
+
+
+    @* <h1>@ViewBag.Category</h1>
+    <h4>@ViewBag.Product.Name</h4>
+    <h4>@ViewBag.Product.Price</h4>
+    <h4>@ViewBag.Product.Description</h4> *@
+
+    <h1>@ViewBag.Category</h1>
+    
+    <h4>@Model.Name</h4>
+    <h4>@Model.Price</h4>
+    <h4>@Model.Description</h4>
 </body>
 </html>
