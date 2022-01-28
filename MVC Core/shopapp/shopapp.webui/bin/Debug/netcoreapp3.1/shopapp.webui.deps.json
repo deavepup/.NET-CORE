@@ -8,7 +8,14 @@
       "TRACE",
       "DEBUG",
       "NETCOREAPP",
-      "NETCOREAPP3_1"
+      "NETCOREAPP3_1",
+      "NETCOREAPP1_0_OR_GREATER",
+      "NETCOREAPP1_1_OR_GREATER",
+      "NETCOREAPP2_0_OR_GREATER",
+      "NETCOREAPP2_1_OR_GREATER",
+      "NETCOREAPP2_2_OR_GREATER",
+      "NETCOREAPP3_0_OR_GREATER",
+      "NETCOREAPP3_1_OR_GREATER"
     ],
     "languageVersion": "8.0",
     "platform": "",
@@ -22,7 +29,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "shopapp.webui/1.0.0": {
+      "ShopApp.WebUI/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -308,10 +315,10 @@
           "WindowsBase": "4.0.0.0"
         },
         "runtime": {
-          "shopapp.webui.dll": {}
+          "ShopApp.WebUI.dll": {}
         },
         "compile": {
-          "shopapp.webui.dll": {}
+          "ShopApp.WebUI.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -2009,7 +2016,7 @@
     }
   },
   "libraries": {
-    "shopapp.webui/1.0.0": {
+    "ShopApp.WebUI/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

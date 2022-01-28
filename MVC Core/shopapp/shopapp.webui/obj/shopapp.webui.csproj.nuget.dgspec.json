@@ -1,29 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\Desktop\\.NET-CORE\\MVC Core\\shopapp\\shopapp.webui\\shopapp.webui.csproj": {}
+    "C:\\Users\\PC\\Desktop\\.NET-CORE\\MVC Core\\ShopApp\\ShopApp.WebUI\\ShopApp.WebUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\Desktop\\.NET-CORE\\MVC Core\\shopapp\\shopapp.webui\\shopapp.webui.csproj": {
+    "C:\\Users\\PC\\Desktop\\.NET-CORE\\MVC Core\\ShopApp\\ShopApp.WebUI\\ShopApp.WebUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Desktop\\.NET-CORE\\MVC Core\\shopapp\\shopapp.webui\\shopapp.webui.csproj",
-        "projectName": "shopapp.webui",
-        "projectPath": "C:\\Users\\PC\\Desktop\\.NET-CORE\\MVC Core\\shopapp\\shopapp.webui\\shopapp.webui.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Desktop\\.NET-CORE\\MVC Core\\ShopApp\\ShopApp.WebUI\\ShopApp.WebUI.csproj",
+        "projectName": "ShopApp.WebUI",
+        "projectPath": "C:\\Users\\PC\\Desktop\\.NET-CORE\\MVC Core\\ShopApp\\ShopApp.WebUI\\ShopApp.WebUI.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Desktop\\.NET-CORE\\MVC Core\\shopapp\\shopapp.webui\\obj\\",
+        "outputPath": "C:\\Users\\PC\\Desktop\\.NET-CORE\\MVC Core\\ShopApp\\ShopApp.WebUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -35,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -45,6 +49,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.22, 3.1.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -53,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.414\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
