@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a1d50e5d-98ec-4f2b-8263-75bafa544a00": {
+      "ProjectGuid": "a1d50e5d-98ec-4f2b-8263-75bafa544a00",
+      "DisplayName": "ShopApp.WebUI",
+      "ColorIndex": 0
+    },
+    "5d39280d-8d4c-4fff-92f9-b2e1f0f2bbc9": {
+      "ProjectGuid": "5d39280d-8d4c-4fff-92f9-b2e1f0f2bbc9",
+      "DisplayName": "ShopApp.WebUI",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Diğer Dosyalar",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}
