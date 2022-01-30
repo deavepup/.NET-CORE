@@ -43,3 +43,4 @@ C:\Users\PC\Desktop\.NET-CORE\MVC Core\ShopApp\ShopApp.WebUI\obj\Debug\netcoreap
 C:\Users\PC\Desktop\.NET-CORE\MVC Core\ShopApp\ShopApp.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\PC\Desktop\.NET-CORE\MVC Core\ShopApp\ShopApp.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout2.cshtml.g.cs
 C:\Users\PC\Desktop\.NET-CORE\MVC Core\ShopApp\ShopApp.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\PC\Desktop\.NET-CORE\MVC Core\ShopApp\ShopApp.WebUI\bin\Debug\netcoreapp3.1\package.json

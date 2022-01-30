@@ -21,15 +21,16 @@
 
     @await Html.PartialAsync("_navbar")
     <partial name="_header">
-        @if (IsSectionDefined("Categories"))
-        {
-            
-                <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3">
+        <main cals="mb-3">
+        <div class="container-fluid">
+            @if (IsSectionDefined("Categories"))
+            {
 
-                    @RenderSection("Categories",false)
-                </div>
+                <div class="row">
+                    <div class="col-md-3">
+
+                        @RenderSection("Categories",false)
+                    </div>
 
 
                     <div class="col-md-9">
@@ -38,22 +39,25 @@
 
                     </div>
                 </div>
-            </div>
-        }
-        else
-        {
-            
-                <div class="container-fluid">
-            <div class="row">
+            }
+            else
+
+
+            {
+
+                <div class="row">
                     <div class="col-md-12">
                         @RenderBody()
                     </div>
                 </div>
-            </div>
-        }
+            }
+        </div>
+        <footer class="py-5 bg-dark text-white text-center">
+            Shop App | 2022
+            
+        </footer>
 
-
-
+        </main>
 
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ShopApp.WebUI.Data;
 using ShopApp.WebUI.Models;
 using System.Collections.Generic;
 
@@ -9,14 +10,12 @@ namespace ShopApp.WebUI.ViewComponents
     {
         public IViewComponentResult Invoke()
         {
-            var categories = new List<Category>()
+            if (RouteData.Values["action"].ToString()=="List")
             {
+                ViewBag.SelectedCategory = RouteData?.Values["id"];
+            }
 
-            new Category { Name = "Telefonlar", Description = "Telefon Kategorisi" },
-            new Category { Name = "Bilgisayar", Description = "Bilgisayar Kategorisi" },
-            new Category { Name = "Elektronik", Description = "Elektronik Kategorisi" }
-        };
-            return View(categories);
+            return View(CategoryRepository.Categories);
         }
     }
 }
