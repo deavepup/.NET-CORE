@@ -6,7 +6,12 @@
             @Model.Name
         </h5>
         <p class="card-text">@Model.Description</p>
-        <a class="btn btn-primary" asp-controller="product" asp-action="details" asp-route-id="@Model.ProductId">İncele</a>
+        <a class="btn btn-primary btn-sm" asp-controller="product" asp-action="Details" asp-route-id="@Model.ProductId">İncele</a>
+        <a class="btn btn-success btn-sm" asp-controller="product" asp-action="Edit" asp-route-id="@Model.ProductId">Düzenle</a>
+        <form action="/product/delete" method="post">
+            <input type="hidden" name="ProductId" value="@Model.ProductId" />
+        <button class="btn btn-danger btn-sm">Sil</button>
+        </form>
         @*<a class="btn btn-primary" href="/product/details/@Model.ProductId">İncele</a>*@
     </div>
 </div>

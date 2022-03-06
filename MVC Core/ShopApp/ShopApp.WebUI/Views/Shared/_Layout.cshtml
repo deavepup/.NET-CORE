@@ -20,8 +20,8 @@
     }
 
     @await Html.PartialAsync("_navbar")
-    <partial name="_header">
-        <main cals="mb-3">
+    @RenderSection("Header",false)
+        <main cals="my-3">
         <div class="container-fluid">
             @if (IsSectionDefined("Categories"))
             {

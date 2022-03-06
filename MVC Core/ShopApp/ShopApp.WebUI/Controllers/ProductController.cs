@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using ShopApp.WebUI.Data;
 using ShopApp.WebUI.Models;
 using ShopApp.WebUI.ViewModels;
@@ -18,10 +19,10 @@ namespace ShopApp.WebUI.Controllers
             };
             return View(productViewModel);
         }
-        public IActionResult List(int? id,string q)
+        public IActionResult List(int? id, string q)
         {
             var products = ProductRepository.Products;
-            if (id !=null)
+            if (id != null)
             {
                 products = products.Where(x => x.CategoryId == id).ToList();
             }
@@ -60,6 +61,54 @@ namespace ShopApp.WebUI.Controllers
 
                 return View(ProductRepository.GetProductById(id));
             }
+        }
+        [HttpGet]
+        public IActionResult Create()
+        {
+            ViewBag.Categories = new SelectList(CategoryRepository.Categories, "CategoryId", "Name");
+            return View(new Product());
+        }
+
+        [HttpPost]
+        public IActionResult Create(Product p)
+        {
+            ViewBag.Categories = new SelectList(CategoryRepository.Categories, "CategoryId", "Name");
+            if (ModelState.IsValid)
+            {
+                p.ProductId = ProductRepository.GetProductLast().ProductId+1;
+                ProductRepository.AddProduct(p);
+                return RedirectToAction("List");
+            }
+            return View(p);
+
+        }
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+
+            ViewBag.Categories = new SelectList(CategoryRepository.Categories, "CategoryId", "Name");
+            return View(ProductRepository.GetProductById(id));
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Product p)
+        {
+
+            ViewBag.Categories = new SelectList(CategoryRepository.Categories, "CategoryId", "Name");
+            if (ModelState.IsValid)
+            {
+
+                ProductRepository.EditProduct(p);
+                return RedirectToAction("List");
+            }
+            return View(p);
+        }
+        [HttpPost]
+        public IActionResult Delete(int ProductId)
+        {
+            ProductRepository.DeleteProduct(ProductId);
+
+            return RedirectToAction("List");
         }
     }
 }

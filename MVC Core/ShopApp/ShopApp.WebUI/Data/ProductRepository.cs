@@ -35,6 +35,33 @@ namespace ShopApp.WebUI.Data
         {
 
             return _products.FirstOrDefault(x => x.ProductId == id);
+        }public static Product GetProductLast()
+        {
+
+            return _products.LastOrDefault();
+        }
+        public static void EditProduct(Product product)
+        {
+            foreach (var p in _products)
+            {
+                if (product.ProductId ==p.ProductId)
+                {
+                    p.Name = product.Name;
+                    p.Price = product.Price;
+                    p.Description= product.Description;
+                    p.ImageUrl = product.ImageUrl;
+                    p.IsApproved= product.IsApproved;
+                    p.CategoryId = product.CategoryId;
+                }
+            }
+        }
+        public static void DeleteProduct(int id)
+        {
+            var product = GetProductById(id);
+            if (product != null)
+            {
+                _products.Remove(product);
+            }
         }
 
     }

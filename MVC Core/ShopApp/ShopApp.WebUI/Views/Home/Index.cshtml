@@ -5,24 +5,27 @@
 }
 
 @section MessageBox{
-    <div class="alert alert-success text-center m-0">
-        You have a message!
-    </div>
+<div class="alert alert-success text-center m-0">
+    You have a message!
+</div>
 }
+@section Header{
 
+<partial name="_header">
+    }
 @if (products.Count == 0)
 {
     @await Html.PartialAsync("_noproduct")
 }
 else
 {
-    <div class="row">
+        <div class="row">
         @foreach (var product in products)
         {
-            <div class="col-md-3">
+                <div class="col-md-3">
                 @await Html.PartialAsync("_product", product)
-            </div>
+                </div>
         }
-    </div>
+        </div>
 }
 
