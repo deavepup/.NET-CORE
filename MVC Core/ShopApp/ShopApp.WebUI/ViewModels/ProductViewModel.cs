@@ -1,4 +1,4 @@
-﻿using ShopApp.WebUI.Models;
+﻿using shopapp.entity;
 using System.Collections.Generic;
 
 namespace ShopApp.WebUI.ViewModels

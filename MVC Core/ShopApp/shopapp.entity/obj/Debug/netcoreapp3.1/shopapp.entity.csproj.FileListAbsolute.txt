@@ -1,0 +1,10 @@
+C:\Users\PC\Desktop\.NET-CORE\MVC Core\ShopApp\shopapp.entity\bin\Debug\netcoreapp3.1\shopapp.entity.deps.json
+C:\Users\PC\Desktop\.NET-CORE\MVC Core\ShopApp\shopapp.entity\bin\Debug\netcoreapp3.1\shopapp.entity.dll
+C:\Users\PC\Desktop\.NET-CORE\MVC Core\ShopApp\shopapp.entity\bin\Debug\netcoreapp3.1\shopapp.entity.pdb
+C:\Users\PC\Desktop\.NET-CORE\MVC Core\ShopApp\shopapp.entity\obj\Debug\netcoreapp3.1\shopapp.entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\.NET-CORE\MVC Core\ShopApp\shopapp.entity\obj\Debug\netcoreapp3.1\shopapp.entity.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\.NET-CORE\MVC Core\ShopApp\shopapp.entity\obj\Debug\netcoreapp3.1\shopapp.entity.AssemblyInfo.cs
+C:\Users\PC\Desktop\.NET-CORE\MVC Core\ShopApp\shopapp.entity\obj\Debug\netcoreapp3.1\shopapp.entity.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\.NET-CORE\MVC Core\ShopApp\shopapp.entity\obj\Debug\netcoreapp3.1\shopapp.entity.dll
+C:\Users\PC\Desktop\.NET-CORE\MVC Core\ShopApp\shopapp.entity\obj\Debug\netcoreapp3.1\shopapp.entity.pdb
+C:\Users\PC\Desktop\.NET-CORE\MVC Core\ShopApp\shopapp.entity\obj\Debug\netcoreapp3.1\shopapp.entity.csproj.AssemblyReference.cache

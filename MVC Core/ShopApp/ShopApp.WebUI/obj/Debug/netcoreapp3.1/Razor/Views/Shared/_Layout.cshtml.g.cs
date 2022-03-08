@@ -14,7 +14,7 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "C:\Users\PC\Desktop\.NET-CORE\MVC Core\ShopApp\ShopApp.WebUI\Views\_ViewImports.cshtml"
-using ShopApp.WebUI.Models;
+using shopapp.entity;
 
 #line default
 #line hidden
@@ -27,7 +27,7 @@ using ShopApp.WebUI.ViewModels;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"280531db84b6c09c1e4e77fab9df8f761706a516", @"/Views/Shared/_Layout.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4d92f221954cd04f7795f709513028a13b6a3d25", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1684403ece180c660667e324bb2866522df83f89", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__Layout : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #line hidden
@@ -56,7 +56,7 @@ using ShopApp.WebUI.ViewModels;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<!DOCTYPE html>\r\n\r\n<html>\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "280531db84b6c09c1e4e77fab9df8f761706a5163296", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "280531db84b6c09c1e4e77fab9df8f761706a5163290", async() => {
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>");
 #nullable restore
 #line 6 "C:\Users\PC\Desktop\.NET-CORE\MVC Core\ShopApp\ShopApp.WebUI\Views\Shared\_Layout.cshtml"
@@ -78,7 +78,7 @@ using ShopApp.WebUI.ViewModels;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "280531db84b6c09c1e4e77fab9df8f761706a5164675", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "280531db84b6c09c1e4e77fab9df8f761706a5164669", async() => {
                 WriteLiteral("\r\n");
 #nullable restore
 #line 11 "C:\Users\PC\Desktop\.NET-CORE\MVC Core\ShopApp\ShopApp.WebUI\Views\Shared\_Layout.cshtml"

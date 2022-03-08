@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using ShopApp.WebUI.Data;
-using ShopApp.WebUI.Models;
+using shopapp.entity;
 using ShopApp.WebUI.ViewModels;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,29 +12,31 @@ namespace ShopApp.WebUI.Controllers
         public IActionResult Index()
         {
 
-            var productViewModel = new ProductViewModel()
-            {
-                Products = ProductRepository.Products
-            };
-            return View(productViewModel);
+            //var productViewModel = new ProductViewModel()
+            //{
+            //    Products = ProductRepository.Products
+            //};
+            //return View(productViewModel);
+            return View();
         }
         public IActionResult List(int? id, string q)
         {
-            var products = ProductRepository.Products;
-            if (id != null)
-            {
-                products = products.Where(x => x.CategoryId == id).ToList();
-            }
-            if (!string.IsNullOrEmpty(q))
-            {
-                products = products.Where(x => x.Name.ToLower().Contains(q.ToLower()) || x.Description.ToLower().Contains(q.ToLower())).ToList();
-            }
-            var productViewModel = new ProductViewModel()
-            {
-                Products = products
-            };
+            //var products = ProductRepository.Products;
+            //if (id != null)
+            //{
+            //    products = products.Where(x => x.CategoryId == id).ToList();
+            //}
+            //if (!string.IsNullOrEmpty(q))
+            //{
+            //    products = products.Where(x => x.Name.ToLower().Contains(q.ToLower()) || x.Description.ToLower().Contains(q.ToLower())).ToList();
+            //}
+            //var productViewModel = new ProductViewModel()
+            //{
+            //    Products = products
+            //};
 
-            return View(productViewModel);
+            //return View(productViewModel);
+            return View();
         }
         public IActionResult Details(int id)
         {
@@ -59,54 +60,54 @@ namespace ShopApp.WebUI.Controllers
             else
             {
 
-                return View(ProductRepository.GetProductById(id));
+                return View();
             }
         }
         [HttpGet]
         public IActionResult Create()
         {
-            ViewBag.Categories = new SelectList(CategoryRepository.Categories, "CategoryId", "Name");
+            //ViewBag.Categories = new SelectList(CategoryRepository.Categories, "CategoryId", "Name");
             return View(new Product());
         }
 
         [HttpPost]
         public IActionResult Create(Product p)
         {
-            ViewBag.Categories = new SelectList(CategoryRepository.Categories, "CategoryId", "Name");
-            if (ModelState.IsValid)
-            {
-                p.ProductId = ProductRepository.GetProductLast().ProductId+1;
-                ProductRepository.AddProduct(p);
-                return RedirectToAction("List");
-            }
-            return View(p);
+            //ViewBag.Categories = new SelectList(CategoryRepository.Categories, "CategoryId", "Name");
+            //if (ModelState.IsValid)
+            //{
+            //    p.ProductId = ProductRepository.GetProductLast().ProductId+1;
+            //    ProductRepository.AddProduct(p);
+            //    return RedirectToAction("List");
+            //}
+            return View();
 
         }
         [HttpGet]
         public IActionResult Edit(int id)
         {
 
-            ViewBag.Categories = new SelectList(CategoryRepository.Categories, "CategoryId", "Name");
-            return View(ProductRepository.GetProductById(id));
+            //ViewBag.Categories = new SelectList(CategoryRepository.Categories, "CategoryId", "Name");
+            return View();
         }
 
         [HttpPost]
         public IActionResult Edit(Product p)
         {
 
-            ViewBag.Categories = new SelectList(CategoryRepository.Categories, "CategoryId", "Name");
-            if (ModelState.IsValid)
-            {
+            //ViewBag.Categories = new SelectList(CategoryRepository.Categories, "CategoryId", "Name");
+            //if (ModelState.IsValid)
+            //{
 
-                ProductRepository.EditProduct(p);
-                return RedirectToAction("List");
-            }
-            return View(p);
+            //    ProductRepository.EditProduct(p);
+            //    return RedirectToAction("List");
+            //}
+            return View();
         }
         [HttpPost]
         public IActionResult Delete(int ProductId)
         {
-            ProductRepository.DeleteProduct(ProductId);
+            //ProductRepository.DeleteProduct(ProductId);
 
             return RedirectToAction("List");
         }

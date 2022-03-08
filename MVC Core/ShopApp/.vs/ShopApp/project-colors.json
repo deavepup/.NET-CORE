@@ -8,14 +8,24 @@
     },
     "5d39280d-8d4c-4fff-92f9-b2e1f0f2bbc9": {
       "ProjectGuid": "5d39280d-8d4c-4fff-92f9-b2e1f0f2bbc9",
-      "DisplayName": "ShopApp.WebUI",
+      "DisplayName": "shopapp.webui",
       "ColorIndex": 1
     },
     "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Diğer Dosyalar",
       "ColorIndex": -1
+    },
+    "5ec7263a-0c27-487d-834e-aa1b9f8dc6a5": {
+      "ProjectGuid": "5ec7263a-0c27-487d-834e-aa1b9f8dc6a5",
+      "DisplayName": "shopapp.entity",
+      "ColorIndex": 2
+    },
+    "1fa33417-6cda-46e0-84ce-7bef00870a62": {
+      "ProjectGuid": "1fa33417-6cda-46e0-84ce-7bef00870a62",
+      "DisplayName": "shopapp.data",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 4
 }
